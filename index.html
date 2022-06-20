@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water stress</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="menu">
+    <a hover href="https://tanazm.github.io/points-unknown/" target="_blank" rel="noopener noreferrer">homepage</a>
+</div>
+<body>
+    <div class="text-container">
+        <br>
+        <h2>Water stressed countries are experiencing conflicts</h2>
+        <p>Over 50 percent of water-related conflicts in 2017 took place in countries experiencing “extremely high” water stress.</p>
+        <p>Countries are constantly drawing water from ground or surface water sources such as lakes or rivers and using it for agricultural, industrial, and domestic purposes. Water stress occurs when the demand for water exceeds the available amount during any given timeframe.</p>
+        <p>This map shows the ratio of annual water withdrawals to renewable resources at a national level and categorizes water stress into five buckets, in accordance with the World Resources Institute’s definition of water stress: if water withdrawals comprise less than 10 percent of a country’s resources, then that country has low water stress; 10-20 percent is categorized as low-to-medium stress; 20-40 percent is medium-to-high stress; 40-80 percent is high stress; and greater than 80 percent is extremely high stress.</p>
+        <p>Click on a country to see what category of water stress it’s experiencing. Then zoom in to click on each <circle style="background-color: #e34a33"></circle> and learn about individual water-related conflicts.</p>
+    </div>
+    <body>
+    <div class="viz-container">
+    <div id='map'></div>
+        <script type='text/javascript' src="map.js"></script>
+        <div id='title' class="title">
+            <div id="election-legend" class="legend">
+                <div><span style="background-color: #b2d8d8"></span>Low stress</div>
+                <div><span style="background-color: #66b2b2"></span>Low-to-medium stress</div>
+                <div><span style="background-color: #008080"></span>Medium-to-high stress</div>
+                <div><span style="background-color: #006666"></span>High stress</div>
+                <div><span style="background-color: #004c4c"></span>Extremely high stress</div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <div class="text-container">
+        <br>
+        <p>In 2017, 23 countries were experiencing “extremely high” water stress. Eight of those countries – Yemen, Sudan, Syria, Algeria, Iraq, Egypt, Tunisia, and Jordan – were also home to 48 of the 87 water conflicts that were recorded by the Pacific Institute via its <a hover href="http://www.worldwater.org/water-conflict/" target="_blank" rel="noopener noreferrer">Water Conflict Chronology</a> tool that year.</p>
+        <p>The crisis in Yemen, where <a hover href="https://www.atlanticcouncil.org/blogs/menasource/an-update-on-yemen-s-water-crisis-and-the-weaponization-of-water/" target="_blank" rel="noopener noreferrer">access to clean water</a> is a major challenge, contributed to a lion’s share of recorded water-related conflicts in 2017, many of which reference air raids that resulted in the destruction of water-related infrastructure.</p>
+    </div>
+    <div class="text-container2">
+        <br>
+        <p>Notes:</p>
+        <p>1. Some countries have withdrawal rates that are higher than 100%. This means they are withdrawing water unsustainably or that they are producing a large share of their water from desalination.</p>
+        <p>2. Water withdrawal data is gathered intermittently, which means it fails to capture seasonal and annual variance that can be significant.</p>
+        <p>3. This data is national, which fails to capture variability at local levels that can help assess the sustainability of specific groundwater aquifers or surface water sources.</p>
+        <p>Source: <a hover href="http://www.worldwater.org/water-conflict/" target="_blank" rel="noopener noreferrer">Water Conflict Chronology</p></a>
+        <p>Source: <a hover href="https://ourworldindata.org/water-use-stress" target="_blank" rel="noopener noreferrer">Water Use and Stress</p></a>
+        <p>Analysis: <a hover href="https://github.com/tanazm/citibike/blob/gh-pages/data/Citibike.ipynb" target="_blank" rel="noopener noreferrer">GitHub</p></a>
+        <br>
+    </div>
+</body>
+</html>
